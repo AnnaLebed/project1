@@ -1,33 +1,25 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import './App.css';
-import Box2 from "./Box2.js";
+import Box3 from "./Box3.js";
 
 
-
-class Box1 extends React.Component {
+class Box2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       username: ''
     };
   }
-
   render() {
     return (
-      <div className="box-1">    
-      <Box2 />        
-       
+      <div className="box-2">    
+      <Box3 /> 
       </div>
     );
   }
 }
 
+export default Box2;
 
-
-
-export default Box1;
-
-ReactDOM.render(<Box1 />, document.getElementById('root'));
-
-
+ReactDOM.render(<Box2 />, document.getElementById('root'));
