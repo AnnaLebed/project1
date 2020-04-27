@@ -1,30 +1,44 @@
 import React from 'react';
 import './App.css';
 
+
+function Card({ picture, header, description }) {
+    return (
+      <div className="card main-background-color">
+        <div className="card-picture main-background-color">
+            < img src = {picture} alt=""/>
+        </div>
+        <div className="card-header text-white text-center">
+            <strong>{header}</strong>         
+        </div>
+        <div className="text-center text-white">
+          <span>{description}</span>         
+        </div>
+      </div>
+    );
+  }
+
+
 class Main extends React.Component {
     render(){
         return (
-            <div className = "container mx-auto mt-4 justify-content-center">
-                <div className="row justify-content-center">
-                    <div className = "col-md-7 col-md-offset-6">
-                        <main>
-                            <article>
-                                <header>
-                                    <h1 className = "text-white text-center">SERVICES</h1>
-                                </header>
-                                <p className = "text-white text-center">Our vision is simple. We want to create websites and 
-                                applications withboth hight quality design and easy-to-access
-                                content. The finished product will be totally unique
-                                and represent awesomeness.</p>
-                            </article>
-                        </main>
-                    </div>
-                </div>
-                    
+            <div className = "container mx-auto mt-4 cards-container ">
+                <Card picture = "./azores.jpg" 
+                header = "USER INTERFACE DESIGN" 
+                description = "Wireframing, prototyping, Usability testing" />
+                <Card picture = "./azores.jpg" 
+                header = "CONCEPT AND IDEAS" 
+                description = "Wireframing prototyping Usability testing"/>
+                <Card picture = "./azores.jpg" 
+                header = "DESIGN AND BRANDING" 
+                description = "Wireframing, prototyping, Usability testing" />
             </div>
         )
     }
 }
+
+
+
 
 
 export default Main;

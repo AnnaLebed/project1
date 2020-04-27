@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from "react-dom";
 import './App.css';
 import Navbar from "./Navbar";
+import Header from "./Header";
 import Main from "./Main";
 
 
@@ -18,8 +19,8 @@ class App extends React.Component {
     return (
       <div className="main-container">    
       <Navbar nav={nav} />
+      <Header header = "SERVICES"/>
       <Main />
-       
       </div>
     );
   }
