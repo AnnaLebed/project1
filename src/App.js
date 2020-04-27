@@ -1,22 +1,24 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import './App.css';
-import Box2 from "./Box2.js";
+import Navbar from "./Navbar";
+import Main from "./Main";
 
 
-
-class Box1 extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: ''
+      state: ''
     };
   }
 
   render() {
+    let nav = {"SERVICES":'/SERVICES', "MAIN": '/MAIN', "THE TEAM":'THE TEAM'}
     return (
-      <div className="box-1">    
-      <Box2 />        
+      <div className="main-container">    
+      <Navbar nav={nav} />
+      <Main />
        
       </div>
     );
@@ -24,10 +26,8 @@ class Box1 extends React.Component {
 }
 
 
+export default App;
 
-
-export default Box1;
-
-ReactDOM.render(<Box1 />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 
