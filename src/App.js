@@ -6,6 +6,7 @@ import Header from "./Header";
 import Main from "./Main";
 
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +21,7 @@ class App extends React.Component {
       <div className="main-container">    
       <Navbar nav={nav} />
       <Header header = "SERVICES"/>
-      <Main />
+      <Main />      
       </div>
     );
   }

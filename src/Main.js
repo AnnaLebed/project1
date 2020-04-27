@@ -5,8 +5,8 @@ import './App.css';
 function Card({ picture, header, description }) {
     return (
       <div className="card main-background-color">
-        <div className="card-picture main-background-color">
-            < img src = {picture} alt=""/>
+        <div className="main-background-color">
+            < img className = "card-picture" src = {picture} alt=""/>
         </div>
         <div className="card-header text-white text-center">
             <strong>{header}</strong>         

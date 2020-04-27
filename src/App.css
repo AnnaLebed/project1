@@ -24,9 +24,9 @@
   /* background-color:rgb(239,125,115); */
 }
 
-/* .card-picture {
-  height: 20px;
-} */
+.card-picture {
+  height: 200px;
+}
 
 .card-description {
   display: table-caption;
